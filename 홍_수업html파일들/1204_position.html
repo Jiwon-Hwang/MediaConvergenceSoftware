@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+      div{
+        width: 100px;
+        height: 100px;
+        border: 1px solid black;
+      }
+
+      #d1{
+        background-color: red;
+        position: static; /* static : position의 디폴트 값. ***top, left등의 값 적용안됨!*** 코드의 흐름에 따라서 위치 놓임. inline이면 inline, block이면 block 따라서... */
+        top: 50px;
+        left: 50px;
+      }
+
+      #d2{
+        background-color: blue;
+        position: relative; /* relative : 상대적 좌표. ***기준은 바로 앞***에 그려져 있는 애! 즉, <div id="d1"> */
+        top: 70px;
+        left: 70px;
+      }
+
+      #d3{
+        background-color: green;
+        position: absolute; /* absolute : 절대 좌표. 근데 윈도우안에서의 절대좌표가 아니라, ***나를 감싸고 있는 부모안에서의 (부모가기준이돼서) 절대좌표*** */
+        top: 150px;
+        left: 150px;
+      }
+
+      #d4{
+        background-color: yellow;
+        position: fixed; /* 스크롤에 상관없이 항상 위치 고정! */
+        top: 20px;
+        left: 300px;
+        z-index: 2; /* z-index : 우선순위를 정해서, 숫자가 클수록 더 앞쪽에(화면에 안가리고 보이게) 배치. */
+      }
+
+      #d5{
+        background-color: orange;
+        position: fixed; /* 스크롤에 상관없이 항상 위치 고정! */
+        top: 30px;
+        left: 330px;
+        z-index: 1; /* z-index : 우선순위를 정해서, 숫자가 클수록 더 앞쪽에(화면에 안가리고 보이게) 배치. */
+      }
+
+      .out{
+        width: 300px;
+        height: 300px;
+        position: relative;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div id="d1">d1:static</div>
+    <div id="d2">d2:relative</div>
+    <div class="out">
+      <div id="d3">d3:absolute</div>
+    </div>
+    <div id="d4">d4:fixed, z-index:2</div>
+    <div id="d5">d5:fixed, z-index:1</div>
+
+  </body>
+</html>

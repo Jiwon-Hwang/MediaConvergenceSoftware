@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <style>
+      div{
+        display: flex; /* <div>좌우 양옆에 조금 공간 남는거는 display속성을 flex로 주면 해결...근데 왜...? ==> inline의 기본 속성 */
+      }
+    /* div 쓰임 : 테이블, 버튼(링크)! */
+      #div1{
+        width: 50px;
+        height: 50px;
+        background-color: green;
+
+        border-width: 1px;
+        border-style: solid dotted dashed solid;
+        border-color: red blue yellow black;
+
+        border-radius: 0 50px 0 50px;
+      }
+
+      #div2{
+        width: 50px;
+        height: 50px;
+        background-color: green;
+
+        border-width: 1px;
+        border-style: solid dotted dashed solid;
+        border-color: red blue yellow black;
+
+        border-radius: 50px 0 50px 0;
+      }
+
+      div[id]{
+        display: inline-block;
+      }
+
+      #circle{
+        width: 80px;
+        height: 80px;
+        background-color: yellow;
+        border: 1px solid pink;
+        border-radius: 40px 40px 40px 40px;
+        text-align: center;
+
+      }
+
+      #cir div{ /* 후손(자손) 선택자 (space) : 바로 아래의 직계 자식이 아니더라도 그냥 아래에 있는 모든 요소들 다 선택함. */
+        width: 80px;
+        height: 80px;
+        background-color: blue;
+        border: 1px solid pink;
+        border-radius: 40px 40px 40px 40px;
+        text-align: center;
+
+        display: inline-block;
+      }
+    </style>
+  </head>
+  <body>
+    <div style="display: flex;">
+      <div id="div1">d1</div>
+      <div id="div2">d2</div>
+    </div>
+    <div style="display: flex;">
+      <div id="div2">d3</div>
+      <div id="div1">d4</div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+
+    <div id="cir">
+      <div>c1</div>
+      <div>c2</div>
+      <div>c3</div>
+    </div>
+    <div>
+      <div id="circle">c4</div>
+      <div id="circle">c5</div>
+      <div id="circle">c6</div>
+    </div>
+
+  </body>
+</html>

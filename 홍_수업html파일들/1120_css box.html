@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+      div{ /* div : 박스!! */
+        width: 100px;  /* width와 height는 순수 content(아래에서는 text)자체만의 가로,세로 크기!! padding, border, margin 포함x */
+        height: 50px;
+        background-color: red;
+
+        border: 1px dotted black;  /* div(박스) 세로 길이가 50에 위아래 1씩해서 52 됨*/
+        padding: 10px; /* border 안쪽 네 방향의 패딩! 따라서 div(박스) 세로길이가 border안쪽으로 10씩 들어가서 총 72됨 */
+        margin: 20px; /* 마진은 박스 크기에 포함 안됨. 박스 밖의 영역 */
+      }
+    </style>
+  </head>
+
+  <body>
+    <div>text</div>
+    <div>text</div>
+  </body>
+</html>

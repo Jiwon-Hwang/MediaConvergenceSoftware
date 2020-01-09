@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <title>wine_select_sweet</title>
+    <style>
+        body{
+            background-image : url('img/Brick.jpg');
+            background-repeat : repeat; /* 패턴 반복 배경*/
+            background-size: auto; /* cover : 배경이미지가 페이지 전체 덮음 / auto : 배경이미지의 원본 크기 유지 */
+        }
+
+        .container{
+            display: flex;
+            flex-direction: column;
+            width: 88%;
+            height: auto;
+            margin: 2% auto;
+        }
+
+        .question_container{
+            display: flex;
+            flex-direction: row-reverse; /* 오른쪽끝부터 거꾸로 flex-item 정렬 */
+            width: 100%;
+            height: auto;
+        }
+
+        .question{
+            display: inline-block;
+            width: 50%; /* % : 부모기준, vw : viewport(윈도우)width기준 */
+            height: auto;
+
+            /* absolute : 부모 안에서(부모에 따라서) 움직이게 하고 싶을 때. 부모 기준으로 0,0 (절대 좌표계)가 시작됨 */
+            /* position: absolute;
+            right: 0; */
+        }
+
+        .buttons{
+            display: flex;
+            flex-direction: row;
+            width: 90%;
+            height: auto;
+            margin: 2vh auto;
+        }
+
+        .btn_container .btn_default{
+            display: inline-block;
+            width: 100%;
+            height: auto;
+            margin: auto;
+        }
+        .btn_container:hover .btn_default{
+            display: none;
+        }
+
+        .btn_container .btn_hover{
+            display: none;
+        }
+        .btn_container:hover .btn_hover{
+            display: inline-block;
+            width: 100%;
+            height: auto;
+            margin: auto;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="question_container">
+            <img class="question" src="img/와인선택/달콤/달콤함에취하고픈오늘.png">
+        </div>
+        <div class="buttons">
+            <a href="wine_select_sweet_01.html">
+                <div class="btn_container">
+                    <img class="btn_default" src="img/와인선택/달콤/함께여서행복해.png">
+                    <img class="btn_hover" src="img/와인선택/달콤/함께여서행복해2.png">
+                </div>
+            </a>
+            <a href="wine_select_sweet_02.html">
+                <div class="btn_container">
+                    <img class="btn_default" src="img/와인선택/달콤/정열을 당신에게.png">
+                    <img class="btn_hover" src="img/와인선택/달콤/정열을 당신에게2.png">
+                </div>
+            </a>
+            <a href="wine_select_sweet_03.html">
+                <div class="btn_container">
+                    <img class="btn_default" src="img/와인선택/달콤/주인공은너야.png">
+                    <img class="btn_hover" src="img/와인선택/달콤/주인공은너야2.png">
+                </div>
+            </a>
+        </div>
+    </div>
+
+</body>
+</html>

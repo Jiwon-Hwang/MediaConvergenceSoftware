@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <title>mood_select</title>
+    <style>
+        body{
+            background-image : url('img/Brick.jpg');
+            background-repeat : repeat; /* 패턴 반복 배경*/
+            background-size: auto; /* cover : 배경이미지가 페이지 전체 덮음 / auto : 배경이미지의 원본 크기 유지 */
+        }
+    
+        .container{
+            display: flex;
+            flex-direction: column;
+            width: 70%;
+            height: auto;
+            margin: 2% auto;
+        }
+
+        .question{
+            display: inline-block;
+            width: 100%;
+            height: auto;
+            margin: 4% auto;
+        }
+
+        .buttons{
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            height: auto;
+        }
+        
+        .btn_container .btn_default{  
+            display: inline-block;
+            width: 100%;
+            height: auto;
+            margin: auto;
+        }
+        .btn_container:hover .btn_default{
+            display: none;
+        }
+    
+        .btn_container .btn_hover{
+            display: none;
+        }
+        .btn_container:hover .btn_hover{
+            display: inline-block;
+            width: 100%;
+            height: auto;
+            margin: auto;
+        }
+    
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <img class="question" src="img/기분선택/기분선택질문.png">
+        <div class="buttons">
+            <a href="wine_select_sweet.html">
+                <div class="btn_container">
+                    <img class="btn_default" src="img/기분선택/달콤1.png">
+                    <img class="btn_hover" src="img/기분선택/달콤2.png">
+                </div>
+            </a>
+            <a href="wine_select_bitter.html">
+                <div class="btn_container">
+                    <img class="btn_default" src="img/기분선택/씁쓸1.png">
+                    <img class="btn_hover" src="img/기분선택/씁쓸2.png">
+                </div>
+            </a>
+        </div>
+    </div>
+
+</body>
+</html>

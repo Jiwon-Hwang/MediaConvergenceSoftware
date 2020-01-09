@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>wine_select_bitter_03</title>
+
+    <style>
+      @import url('https://fonts.googleapis.com/css?family=Nanum+Myeongjo:400,700|Noto+Serif+KR:200,300,400,500,600,700,900&display=swap&subset=korean');
+
+      body {
+        background-image: url("img/Brick.jpg");
+        background-repeat: repeat;
+        background-size: auto;
+      }
+
+      #gradient {
+        position: relative;
+        width: 100%;
+        min-height: 100vh;
+        background-image: linear-gradient(
+          to bottom,
+          rgba(255, 255, 255, 0),
+          rgba(0, 0, 0, 1)
+        );
+      }
+      #black {
+        width: 100%;
+        min-height: 320vh; /* 검정 배경 크기 조절*/
+        background-color: black;
+      }
+      #title{
+        position: absolute; /*위치 지정 속성*/
+        top: 18%; /*위치 지정 */
+        left: 10%; /*위치 지정 */
+        right:10%; /*위치 지정 */
+      }
+      .t{position: static;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      #subt{
+        position: relative; /*위치 지정 속성*/
+        top: 50px; /*위치 지정 */
+        color:khaki;
+      }
+      #wine{
+        position: relative;
+        top: 70px;
+      }
+      .wn{
+        position: relative;
+        top: 150px;
+      }
+      #c{
+        position:relative;
+        top:350px;
+      }
+      #d{
+        position:relative;
+        top:50px;
+      }
+
+      h1{
+        font-family: 'Noto Serif KR', serif; /*웹폰트 적용 */
+        color: white;
+        position: absolute; /*위치 지정 속성*/
+        top: 50%; /*위치 지정 */
+        left: 50%; /*위치 지정 */
+        transform: translate(-50%, -50%); /*위치 지정 */
+            }
+      h2 {
+        font-family: 'Nanum Myeongjo', serif; /*웹폰트 적용 */
+        color: white;
+        position: absolute; /*위치 지정 속성*/
+        top: 50%; /*위치 지정 */
+        left: 50%; /*위치 지정 */
+        transform: translate(-50%, -50%); /*위치 지정 */
+      }
+
+    </style>
+  </head>
+
+
+  <body>
+
+    <div id="gradient"></div>
+    <div id="black"></div>
+
+    <div id="title" style="text-align:center">
+      <div>
+        <img class="t" src="img\title\이런날도있는거지.png">
+      </div>
+
+        <h1 id="subt">
+          행복하고 좋은 날도 있지만, 씁쓸하고 나쁜 날도 있다.
+        </h1>
+
+        <h2 id="c">
+        <br/><br/><br/><br/>
+        그런 날이 있어, 유달리 힘든 것 같은 날. <br/><br/>
+        늘 하던 일도 잘 안되는 것 같고 <br/><br/>
+        기분도 갑자기 우울해지고 <br/><br/>
+        다른 사람이랑 나를 비교하기도 하고 <br/><br/>
+        괜시리 다른 사람들한테 짜증도 내고 <br/><br/><br/>
+        괜찮아. 누구나 다 그런 날을 가져. <br/><br/><br/>
+        이런 날에는 우울한 기분 대신 <br/><br/>
+        나를 위해 와인을 한잔 선물하자 <br/><br/>
+        그리고 이렇게 말해보자 <br/><br/><br/>
+        내일은 분명히 잘 될거야! <br/><br/><Br/><br/>
+        </h2>
+
+        <img id="wine" src="img\와인\귄체트 그랑 리제르바.png">
+
+      <div>
+        <h1 class="wn">
+          "귄체트 그랑 리제르바"<br/><br/>
+        </h1>
+        <h2 id="c">
+          오늘, 와인한잔 만을 위한 와인 메이커의 스페셜 셀레션<br/><br/><br/>
+          미디움-풀바디 와인으로 부드러운 탄닌과 함께 긴 여운을 남기는 와인<br/><br/>
+            <hr width= 70% color = white border = 0>
+        <div id="d">
+            <b>도수 13도 </b><br/><br/>
+            <b>당도</b> ●○○○○ <br/><br/>
+            <b>바디</b> ●●●●○ <br/><br/>
+            <b>품종</b> 까베르네 소비뇽<br/><br/><br/>
+          </h2>
+       </div>
+       <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+         <audio src="audio\지우반(bitter03).mp3" autoplay controls> /바꿔야함/
+      </div>
+    </div>
+
+
+
+  </body>
+
+
+</html>

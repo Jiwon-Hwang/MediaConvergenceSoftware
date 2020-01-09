@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+      h1+p {  /* 동위선택자 + : p를 고를건데, h1과 바로 옆에 붙어있는 애를 찾을 거다. */
+        color: red;
+      }
+
+      h1~p {  /* 동위선택자  ~ : 여전히 p를 고르고 싶은데, h1과 *같은 레벨*상에 있으면 된다. */
+        color: blue;
+      }
+
+      #naver:visited{ /* 한번이라도 방문한 후에는 색깔을 red로 바꾸기! */
+        color: green;
+      }
+      #daum:visited{
+        color: red;
+      }
+      a:nth-of-type(3):visited{  /* 구조선택자 이용해서도 가능! a를 다 찾아서 3번째꺼를 찾아라! */
+        color: black;
+      }
+
+    </style>
+  </head>
+  <body>
+    동위 선택자<br>
+    <p>본문 0</p>
+    <h1>제목 1</h1>
+    <h2>제목 2</h2>
+    <p>본문 1</p>
+    <p>본문 2</p>
+    <p>본문 3</p>
+    링크 선택자<br>
+    <a id="naver" href="http://www.naver1.com">네이버</a><br> <!-- 한번도 방문하지 않은 페이지로 만들기 위해서 1 붙임.. 파란색 링크로 표시됨(방문x링크) -->
+    <a id="daum" href="http://www.daum1.net">다음</a><br>
+    <a id="facebook" href="http://www.facebook8.com">페이스북</a><br>
+  </body>
+</html>

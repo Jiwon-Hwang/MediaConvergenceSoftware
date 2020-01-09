@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <title>main</title>
+    <style>
+        body{
+            background-image : url('img/Brick.jpg');
+            background-repeat : repeat; /* 패턴 반복 배경*/
+            background-size: auto; /* cover : 배경이미지가 페이지 전체 덮음 / auto : 배경이미지의 원본 크기 유지 */
+        }
+    
+        .container{
+            width: 70%;
+            height: 86%;
+            margin: 2% auto;
+        }
+    
+        .container .btn_default{  /* class="container"의 자손인 class="btn_default"" 선택! */
+            display: inline-block;
+            width: 100%;
+            height: auto;
+            margin: auto;
+        }
+        .container:hover .btn_default{
+            display: none;
+        }
+    
+        .container .btn_hover{
+            display: none;
+        }
+        .container:hover .btn_hover{
+            display: inline-block;
+            width: 100%;
+            height: auto;
+            margin: auto;
+        }
+    
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <a href="mood_select.html">
+            <img class="btn_default" src="img/오늘,와인한잔1.png">
+            <img class="btn_hover" src="img/오늘,와인한잔2.png">
+        </a>
+    </div>
+</body>
+</html>

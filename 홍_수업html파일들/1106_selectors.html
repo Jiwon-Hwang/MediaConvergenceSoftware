@@ -1,0 +1,61 @@
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<style>
+			li[class][id]{  /* 속성선택자 [] : 중접 필터링!! ==> li들을 먼저 고르고, 그다음에 class라는 속성을 가진 애들을 골라줘~ (한번 더 걸러줌) 추가로 id라는 속성 갖고있는 애까지 필터링 한번 더 해줘~ */
+				color: red;
+				background-color: yellow;
+			}
+
+			div>ul>li>ul>li{  /* 자식 선택자 > : 자손과 달리 바로 아래의 자식만 선택해 나감. */
+				color: blue;
+				background-color: yellow;
+			}
+
+			div li{  /* 후손(자손) 선택자 (space) : 바로 아래의 직계 자식이 아니더라도 그냥 아래에 있는 모든 요소들 다 선택함. */
+				border: 1px solid black;
+			}
+
+			li:hover{  /* 반응 선택자 : hover(마우스 커서를 올려놓으면), active(클릭이 되는 순간에만), ...등 ==> cf. 속성 선택자가 반응 선택자보다 우선순위가 높아서 hover 안먹음!!(속성선택자만 먹여짐)*/
+			 background-color: pink;
+			}
+
+		</style>
+	</head>
+	
+	<body>
+		Lorem ipsum dolor sit amet, consectetur <a href="#">adipisicing</a> elit, sed do eiusmod <a href="http://net.tutsplus.com">tempor</a> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+		<div>
+			<p> My paragraph here. </p>
+			<ul>
+				<li class="item1" id="li1"> List Item 1</li>
+				<li class="item2"> List Item 2</li>
+			</ul>
+			<ul>
+				<li class="item1" id="li3"> List Item 3</li>
+				<li> List Item 4</li>
+			</ul>
+		</div>
+
+		<div id="container">
+			<ul>
+				<li class="item1"> List Item
+				<ul>
+					<li class="item1"> Child </li>
+				</ul>
+				</li>
+				<li> List Item </li>
+				<li> List Item </li>
+				<li> List Item </li>
+			</ul>
+
+			<p> Lorem ipsum dolor sit amet, <a href="#" title="Some title">consectetur</a> adipisicing elit, sed do <a href="http://nettuts.com">Nettuts</a> tempor. </p>
+			<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor. </p>
+			<p> Lorem ipsum dolor sit amet, consectetur <a href="#">adipisicing</a> elit, sed do eiusmod tempor. </p>  <!-- <a href="#"> 이렇게 # 만하는건, 빈칸의 의미!(언젠간 링크 넣을거에요~) -->
+			<p> Lorem ipsum <a href="http://net.tutsplus.com">Nettuts+</a> sit amet, consectetur adipisicing elit, sed do eiusmod tempor. </p>
+		</div>
+
+		<p> Paragraph outside of div </p>
+	</body>
+</html>

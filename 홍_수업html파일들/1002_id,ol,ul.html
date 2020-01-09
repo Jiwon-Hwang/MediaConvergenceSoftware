@@ -1,0 +1,49 @@
+<html>
+<head>
+    <meta charset="utf-8" />
+</head>
+<body>
+  <table border="1">
+    <tr>
+      <td>데이터1</td>
+      <td>데이터2</td>
+      <td>데이터3</td>
+    </tr>
+    <tr>
+      <td></td><td>데이터4</td> <!-- 앞에 빈 td를 넣어줘야 데이터 4를 둘째 줄 가운데 칸으로 밀 수 있음! -->
+    </tr>
+  </table>
+
+
+  메뉴<br>
+  <ol type="I" start="9"> <!-- <ol type="A"> : 대문자로 리스트 앞에 표시 됨. 소문자로 하려면 a, 로마자로 하려면 I -->
+    <li>링크5</li>        <!-- reversed : 거꾸로 순번 리스트 / start : ~부터 순서 시작 -->
+    <li>링크1</li>
+    <ol type="a">
+      <li>링크5</li>
+      <li>링크1</li>
+      <ul>
+        <li>링크3</li>
+        <li>링크4</li>
+      </ul>
+      </ol>
+    <li>링크3</li> <!-- 얘네는 맨 바깥에 감싸고 있는 ol이 적용됨! -->
+    <li>링크4</li>
+  </ol>
+
+  <a href="0918_intro.html" id="top">링크1</a> <br>  <!-- 링크1 이라는 텍스트 누르면 저 url에 해당하는 웹브라우저 열리고, 이 텍스트의 id는 top이다! -->
+  <a href="#p1">링크2</a><br>
+  <a href="#p2">링크3</a><br>
+  링크4<br>
+  <p id="p1">  <!--id 라는 속성을 통해서 p1이라는 id만으로 링크를 통해 바로 p1부분으로 이동 가능!-->
+    본문 내용 1
+  </p>
+  <p id="p2">
+    본문 내용 2
+  </p>
+  <a href="#top">맨위로</a>  <!-- id="top" 부분으로 올라감! -->
+</body>
+</html>
+
+
+<!-- cf. 주석 단축키 : ctrl+/ -->
